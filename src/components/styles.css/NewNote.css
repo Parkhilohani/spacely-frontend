@@ -1,0 +1,85 @@
+.note-page {
+  padding: 10rem;
+  background-color: #ffffff;
+  color: #000000;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu > button {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+}
+
+.menu-options {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.menu-options > div {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.menu-options > div:hover {
+  background-color: #e0e0e0;
+}
+
+.note-textarea {
+  width: 100%;
+  height: 70vh;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  color: #000000;
+  resize: vertical;
+}
+
+/* 🔲 Dark mode support */
+.dark .note-page {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark .menu > button {
+  color: #ffffff;
+}
+
+.dark .menu-options {
+  background: #1f1f1f;
+  color: #fff;
+  border-color: #444;
+}
+
+.dark .menu-options > div:hover {
+  background-color: #2a2a2a;
+}
+
+.dark .note-textarea {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-color: #444;
+}

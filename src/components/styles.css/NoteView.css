@@ -1,0 +1,80 @@
+.note-view-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  background: transparent;
+  color: #000;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.note-view-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  color: inherit;
+}
+
+.note-view-content {
+  white-space: pre-wrap;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: inherit;
+  padding-bottom: 3rem;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  color: #555;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.back-btn:hover {
+  color: #000;
+  background-color: #f0f0f0;
+}
+
+/* 🌙 Dark Mode */
+.dark .note-view-container {
+  color: #eee;
+  background: transparent;
+}
+
+.dark .note-view-content {
+  color: #ddd;
+}
+
+.dark .back-btn {
+  color: #bbb;
+}
+
+.dark .back-btn:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 600px) {
+  .note-view-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .note-view-title {
+    font-size: 1.5rem;
+  }
+
+  .note-view-content {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .back-btn {
+    font-size: 0.95rem;
+  }
+}

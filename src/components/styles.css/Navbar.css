@@ -1,0 +1,61 @@
+/* === Base Navbar === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #555; 
+  color: white;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 100;
+  border-bottom: 1px solid #444;
+  padding: 0; 
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  height: 220px;
+  width: auto;
+}
+
+
+/* === Mobile Menu Button (Left side) === */
+.nav-left {
+  margin-left: 16px; /* Optional spacing from left edge */
+}
+
+.nav-mob-menu {
+  font-size: 26px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+/* === Dark Mode === */
+body.dark-mode .navbar {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark-mode .logo {
+  color: white;
+}
+
+/* === Responsive (Mobile) === */
+@media screen and (max-width: 768px) {
+  .nav-mob-menu {
+    display: block ;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+}

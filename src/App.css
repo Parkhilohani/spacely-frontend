@@ -1,0 +1,60 @@
+body, html{
+  margin: 0;
+  padding:0;
+}
+
+/* ===== THEME BASE ===== */
+
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+body.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ===== COMMON STYLES (shared) ===== */
+.navbar{
+  padding: 0;
+}
+
+.dashboard-element,
+.nav-menu li a p {
+  margin: 6px;
+  border-radius: 5px;
+  border: none;
+  /* transition: background-color 0.3s, color 0.3s; */
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ===== HOVER STYLES ===== */
+
+body.light-mode button:hover,
+body.light-mode .dashboard-element:hover,
+body.light-mode .nav-menu li a p:hover {
+  background-color: #333; 
+  color: white;
+}
+
+body.dark-mode button:hover,
+body.dark-mode .dashboard-element:hover,
+body.dark-mode .nav-menu li a p:hover {
+  background-color: grey;
+  color: white;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media screen and (max-width: 768px) {
+  .setting-container {
+    /* padding: 10px; */
+    font-size: 16px;
+  }
+
+  button {
+    width: 30%;
+  }
+}

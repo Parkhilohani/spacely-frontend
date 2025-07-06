@@ -1,0 +1,57 @@
+.logout-container {
+  min-height: 78vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+}
+
+.logout-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.logout-button {
+  padding: 1.2rem 3rem;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  min-width: 260px;
+}
+
+.logout-button:hover {
+  background-color: #333333;
+  transform: scale(1.02);
+}
+
+.logout-error {
+  color: red;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+/* 🌙 Dark Mode Support */
+.dark .logout-container {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.dark .logout-button {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark .logout-button:hover {
+  background-color: #dddddd;
+}

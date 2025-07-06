@@ -1,0 +1,53 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.dashboard-content {
+  margin-left: 220px;
+  padding: 110px;
+  width: 100%;
+}
+
+.new-page-btn {
+  width: 200px;
+  height: 120px;
+  background: #f1f1f1;
+  border: 2px dashed currentColor;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.new-page-btn:hover {
+  background-color: #e2e2e2;
+  transform: scale(1.03);
+}
+
+/* === Light Mode === */
+body.light-mode .dashboard-container {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+body.light-mode .dashboard-content {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* === Dark Mode === */
+body.dark-mode .dashboard-container {
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark-mode .dashboard-content {
+  background-color: #000;
+  color: #fff;
+}
