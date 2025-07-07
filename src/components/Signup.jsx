@@ -15,7 +15,8 @@ export default function Signup() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5001/api/auth/signup", { name, email, password })
+      // .post("http://localhost:5001/api/auth/signup", { name, email, password })
+      .post(`${import.meta.env.REACT_APP_BACKEND_BASEURL}/api/auth/signup` , {email,password})
       .then((result) => {
         const student = result.data.student;
         if(student && student._id){

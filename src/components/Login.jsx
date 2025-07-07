@@ -12,7 +12,8 @@ export default function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5001/api/auth/login", { email, password })
+      // .post("http://localhost:5001/api/auth/login", { email, password })
+      .post(`${import.meta.env.REACT_APP_BACKEND_BASEURL}/api/auth/login` , {email,password})
       .then((result) => {
         const user = result.data.user;
         console.log(result.data);
